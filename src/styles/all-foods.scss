@@ -1,0 +1,21 @@
+.all-foods {
+  .search__widget,
+  .sorting__widget select {
+    padding: 7px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    @media screen and (max-width: 1500px) {
+      width: 100% !important;
+      margin: 10px 0;
+    }
+ 
+    input {
+      border: none;
+      background-color: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.scroll-up{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999999;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    background-color: #df2020;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    @media screen and (max-width: 575px) {
+        width: 30px;
+        height: 30px;
+        bottom: 7px;
+        right: 7px;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+
+// To Show Scroll Up Button
+.hidescroll{
+    display: none !important;
+}

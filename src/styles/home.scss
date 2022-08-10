@@ -1,0 +1,212 @@
+// =============== Hero Section =============== //
+.hero {
+  .hero__content {
+    padding-top: 70px;
+    @media screen and (max-width: 575px) {
+      padding-top: 10px;
+    }
+    h5{
+        @media screen and (max-width: 575px) {
+            font-size: 1.2rem;
+        }
+    }
+    .hero__title {
+      font-size: 2.5rem;
+      line-height: 55px;
+      @media screen and (max-width: 575px) {
+        font-size: 1.5rem;
+        line-height: 45px;  
+      }
+      span {
+        color: #df2020;
+      }
+    }
+    p {
+      font-size: 1rem;
+      line-height: 30px;
+      color: #777;
+    }
+    .hero__btns {
+      button {
+        border: none;
+        outline: none;
+        padding: 7px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .order__btn {
+        background: #df2020;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+          background: #212245;
+        }
+      }
+      .all__foods-btn {
+        background: transparent;
+        border: 1px solid #df2020;
+        a {
+          color: #df2020;
+          @media screen and (max-width: 575px) {
+            font-size: 0.8rem;
+            
+          }
+        }
+      }
+    }
+    .hero__service {
+      p {
+        color: #212245;
+        font-weight: 600;
+        font-size: 0.9rem;
+        @media screen and (max-width: 800px) {
+          font-size: 0.7rem;
+          flex: 1;
+        }
+        @media screen and (max-width: 330px) {
+          font-size: 0.6rem !important; 
+        }
+      }
+    }
+    .shipping__icon {
+      i {
+        padding: 5px;
+        background: #df2020;
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 500 !important;
+      }
+    }
+  }
+}
+// =============== Category item Section =============== //
+.category__item {
+  background: #fde4e4;
+  padding: 30px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    transform: translateY(-15px);
+  }
+}
+// =============== Food Category Section =============== //
+.food__category {
+  background: #df2020;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 0;
+  border-radius: 8px;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    background: transparent;
+    color: #fff;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .foodBtnActive {
+    background: #fff;
+    border-radius: 5px;
+    color: #df2020;
+  }
+}
+
+// =============== Why Tasty  Section =============== //
+.why__tasty-treat {
+  .treat_img{
+    position: relative;
+    top: -100px;
+  }
+  .tasty__treat-title {
+    span {
+      color: #df2020;
+    }
+  }
+  .tasty__treat-desc {
+    color: #777;
+    line-height: 28px;
+  }
+  .choose__us-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    i {
+      font-weight: 500 !important;
+      color: #df2020;
+    }
+  }
+
+  .choose__us-desc {
+    color: #777;
+  }
+}
+
+// =============== Product item  Section =============== //
+.product__item {
+  box-shadow: 0 0 7px #eee;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+
+  .product__img {
+    margin-bottom: 30px;
+    transition: 0.4s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .product__content {
+    .product__title {
+      margin-bottom: 30px;
+      a {
+        color: #212245;
+        font-size: 1.1rem;
+      }
+    }
+    .product__price {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #df2020;
+    }
+    .addToCart__btn {
+      border: none;
+      padding: 7px 20px;
+      background: #df2020;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// =============== Testimonial Section =============== //
+.testimonial{
+  padding: 0 20px;
+    .testimonial__subtitle{
+        color: #df2020;
+    }
+    .testimonial__title{
+        span{
+            color: #df2020;
+        }
+    }
+
+    .testimonial__desc{
+        color: #777;
+        line-height: 30px;
+    }
+}

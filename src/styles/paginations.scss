@@ -1,0 +1,29 @@
+.paginationBttns {
+  width: 80%;
+  margin-bottom: 50px !important;
+  height: 40px;
+  margin: 0 auto ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  list-style: none;
+  margin-top: 30px;
+
+  a {
+    padding: 5px 13px;
+     background: #212245;
+    color: #fff !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.3s ;
+    &:hover {
+    background: #df2020;
+
+    }
+  }
+}

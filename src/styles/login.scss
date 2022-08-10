@@ -1,0 +1,35 @@
+.login {
+        .log {
+            background: #fde4d4;
+            padding: 30px;
+            width: 40%;
+            @media screen and (max-width: 768px) {
+                width: 90%;
+            }
+            .form__group {
+              margin-bottom: 30px;
+              input {
+                width: 80%;
+                background: transparent;
+                padding: 7px 20px;
+                border: none;
+                border-bottom: 1px solid #2122454c;
+                &:focus {
+                  outline: none;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    
+                }
+              }
+            }
+            .addToCart__btn {
+                border: none;
+                padding: 7px 20px;
+                background: #df2020;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 0.9rem;
+              }
+          }
+}

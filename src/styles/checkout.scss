@@ -1,0 +1,35 @@
+.checkout {
+  .checkout__form {
+    .form__group {
+      margin-bottom: 30px;
+      input {
+        width: 100%;
+        background: transparent;
+        padding: 7px 20px;
+        border: none;
+        border-bottom: 1px solid #2122454c;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .addToCart__btn {
+      border: none;
+      padding: 7px 20px;
+      background: #df2020;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      margin: 10px 0 50px;
+    }
+  }
+
+  .checkout_bill {
+    background: #fde4d4;
+    padding: 30px;
+    .checkout_total {
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+  }
+}

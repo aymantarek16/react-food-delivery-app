@@ -1,0 +1,66 @@
+/* ================== Color ================== */
+/* 
+#df2020 // red
+#212245 // darkBlue
+#fde4e4 // pink
+#fcfcfc // white
+*/
+
+/* ================== google fonts ================== */
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web&display=swap");
+
+/* ================== reset default style ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================== base style ================== */
+body {
+  font-family: "Istok Web", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "RocknRoll One", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #212245;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+/* ================== scrollbar ================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fcfcfc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #df2020;
+}

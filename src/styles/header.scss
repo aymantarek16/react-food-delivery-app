@@ -1,0 +1,162 @@
+// ================= Styling On Header ================= //
+.header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  padding-bottom: 55px;
+  z-index: 9999999999 !important;
+  transition: all 0.2s;
+
+  // ================= Logo ================= //
+  .logo {
+    text-align: center;
+    img {
+      width: calc(100% - 60%);
+      object-fit: cover;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #212245;
+      margin-top: -10px;
+      margin-bottom: 0;
+    }
+  }
+  // ================= Menu ================= //
+  .navigation {
+    .menu {
+      a {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #212245;
+        transition: 0.3s;
+        &:hover {
+          color: #df2020;
+        }
+        &.active_menu {
+          color: #df2020 !important;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  // ================= Right Icons ================= //
+  .nav__right {
+    .cart__icon {
+      position: relative;
+      .cart__badge {
+        position: absolute;
+        top: 20px;
+        right: -11px;
+        background: #df2020;
+        color: #fff;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h6 {
+          font-size: 0.7rem !important;
+          font-weight: 600;
+          color: #fff;
+          position: relative;
+          top: 3px;
+        }
+        @media screen and (max-width: 991px) {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+    .mobile__menu {
+      font-weight: 600;
+      display: none;
+    }
+    i {
+      font-size: 1.3rem;
+      color: #212245;
+      cursor: pointer;
+    }
+  }
+}
+
+// When Window.ScrollY > 10
+.header__sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+.hideTitle {
+  display: none !important;
+}
+
+// ================= Media Quary ================= //
+
+@media screen and (max-width: 992px) {
+  .header {
+    .logo {
+      img {
+        width: calc(100% - 70%) !important;
+      }
+      h5 {
+        font-size: 0.8rem !important;
+        margin-top: -15px !important;
+      }
+    }
+    .navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.425);
+      z-index: 99;
+      display: none;
+
+      .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        line-height: 20px;
+        a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .mobile__menu {
+      display: block !important;
+    }
+    i {
+      font-size: 1.1rem !important;
+    }
+    .show__menu {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 50px;
+    line-height: 50px;
+    .logo {
+      h5 {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}

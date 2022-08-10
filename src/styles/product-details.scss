@@ -1,0 +1,135 @@
+// ======================= Mixin ======================= //
+@mixin flex {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+@mixin btn {
+  border: none;
+  padding: 7px 25px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+// ======================= Food Details Styling ======================= //
+.food-details {
+  .product__images {
+    .img__item-image {
+      width: 50% !important;
+      margin-bottom: 25px;
+      cursor: pointer;
+      @media screen and (max-width: 600px) {
+        width: 40% !important;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      text-align: center;
+    }
+  }
+  .single__product-content {
+    padding-left: 60px;
+    @media screen and (max-width: 700px) {
+      padding-left: 0;
+    }
+    .product__title {
+      @media screen and (max-width: 700px) {
+        font-size: 1.4rem;
+        margin: 30px 0 20px;
+      }
+    }
+    .product__price {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #df2020;
+      margin: 20px 0 !important;
+      @include flex;
+      margin-bottom: 0;
+      span {
+        font-size: 2rem;
+        @media screen and (max-width: 700px) {
+          font-size: 1.7rem;
+        }
+      }
+    }
+    .category {
+      font-weight: 600;
+      color: #212245;
+      @include flex;
+      margin-top: 10px;
+      span {
+        padding: 5px 10px;
+        background: #fde4e4;
+        color: #212245;
+        border-radius: 5px;
+      }
+    }
+
+    .addTOCart__btn {
+      @include btn;
+    }
+  }
+  .tabs {
+    border-bottom: 1px solid #ddd;
+    h6 {
+      cursor: pointer;
+    }
+  }
+  .tab__content {
+    padding: 30px 0px;
+    p {
+      line-height: 30px;
+      color: #212245b6;
+    }
+  }
+  .tab__active {
+    color: #df2020;
+  }
+
+  .tab__form {
+    .review {
+      .user__name {
+        font-weight: 600;
+        color: #212245;
+      }
+      .user__email {
+        font-size: 0.8rem;
+      }
+      .feedback__text {
+        color: #212245b6;
+      }
+    }
+    .form {
+      width: 60%;
+      margin: auto;
+      background: #fde4e4;
+      padding: 20px;
+      border-radius: 5px;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        
+      }
+      .form__group {
+        margin-bottom: 30px;
+        input,
+        textarea {
+          width: 100%;
+          background: transparent;
+          padding: 7px 20px;
+          border: none;
+          border-bottom: 1px solid #2122454c;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .addTOCart__btn {
+        @include btn;
+      }
+    }
+  }
+  .related__Product-title {
+    font-size: 1.4rem;
+  }
+}
