@@ -1,23 +1,15 @@
-/* ================== Color ================== */
-/* 
-#df2020 // red
-#212245 // darkBlue
-#fde4e4 // pink
-#fcfcfc // white
-*/
-
-/* ================== google fonts ================== */
+/* ======================= google fonts ======================= */
 @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web&display=swap");
 
-/* ================== reset default style ================== */
+/* ======================= reset default style ======================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================== base style ================== */
+/* ======================= base style ======================= */
 body {
   font-family: "Istok Web", sans-serif;
   scroll-behavior: smooth;
@@ -52,7 +44,7 @@ section {
   padding: 60px 0px;
 }
 
-/* ================== scrollbar ================== */
+/* ======================= scrollbar ======================= */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -64,3 +56,12 @@ section {
 ::-webkit-scrollbar-thumb {
   background: #df2020;
 }
+
+/* ======================= Color Used ======================= */
+// red: #df2020;
+
+// white : #fcfcfc;
+
+// Dark Blue: #212245;
+
+// Pink: #fde4e4;
