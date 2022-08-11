@@ -5,17 +5,17 @@
     @media screen and (max-width: 575px) {
       padding-top: 10px;
     }
-    h5{
-        @media screen and (max-width: 575px) {
-            font-size: 1.2rem;
-        }
+    h5 {
+      @media screen and (max-width: 575px) {
+        font-size: 1.2rem;
+      }
     }
     .hero__title {
       font-size: 2.5rem;
       line-height: 55px;
       @media screen and (max-width: 575px) {
         font-size: 1.5rem;
-        line-height: 45px;  
+        line-height: 45px;
       }
       span {
         color: #df2020;
@@ -50,7 +50,6 @@
           color: #df2020;
           @media screen and (max-width: 575px) {
             font-size: 0.8rem;
-            
           }
         }
       }
@@ -65,7 +64,7 @@
           flex: 1;
         }
         @media screen and (max-width: 330px) {
-          font-size: 0.6rem !important; 
+          font-size: 0.6rem !important;
         }
       }
     }
@@ -87,6 +86,8 @@
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.4s;
+  margin-top: 30px;
+
   &:hover {
     transform: translateY(-15px);
   }
@@ -126,7 +127,7 @@
 
 // =============== Why Tasty  Section =============== //
 .why__tasty-treat {
-  .treat_img{
+  .treat_img {
     position: relative;
     top: -100px;
   }
@@ -194,19 +195,19 @@
 }
 
 // =============== Testimonial Section =============== //
-.testimonial{
+.testimonial {
   padding: 0 20px;
-    .testimonial__subtitle{
-        color: #df2020;
+  .testimonial__subtitle {
+    color: #df2020;
+  }
+  .testimonial__title {
+    span {
+      color: #df2020;
     }
-    .testimonial__title{
-        span{
-            color: #df2020;
-        }
-    }
+  }
 
-    .testimonial__desc{
-        color: #777;
-        line-height: 30px;
-    }
+  .testimonial__desc {
+    color: #777;
+    line-height: 30px;
+  }
 }

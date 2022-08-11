@@ -46,6 +46,7 @@ const featureData = [
 ];
 
 const Home = () => {
+  
   const [category, setCategory] = useState("All");
   const [allProducts, setAllProducts] = useState(products);
 
