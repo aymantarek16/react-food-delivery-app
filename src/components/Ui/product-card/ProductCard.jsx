@@ -22,7 +22,7 @@ const ProductCard = ({ item }) => {
     btnRef.current.innerText = "added!";
     setTimeout(() => {
       btnRef.current.innerText = "Add to Cart";
-    }, 1000);
+    }, 700);
   };
   return (
     <div className="product__item mb-4">
