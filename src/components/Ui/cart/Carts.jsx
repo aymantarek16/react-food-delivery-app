@@ -17,7 +17,7 @@ const Carts = () => {
   };
 
   return (
-    <div className="cart__container">
+    <div className="cart__container" onClick={toggleCart}>
       <ListGroup className="cart">
         <div className="cart__close">
           <span onClick={toggleCart}>
@@ -42,7 +42,9 @@ const Carts = () => {
             Subtotal : <span>${totalAmount}</span>
           </h6>
           <button>
-            <Link to="/checkout">Checkout</Link>
+            <Link to="/checkout" onClick={toggleCart}>
+              Checkout
+            </Link>
           </button>
         </div>
       </ListGroup>

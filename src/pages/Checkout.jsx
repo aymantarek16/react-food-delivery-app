@@ -14,7 +14,7 @@ const Checkout = () => {
   const [postalCode, setPostalCode] = useState("");
 
   const shippingInfo = [];
-  const cartTotalAmount = useSelector((state) => state.cart.totalAmount);
+  let cartTotalAmount = useSelector((state) => state.cart.totalAmount);
   let shippingCost = 30;
 
   let totalAmount = cartTotalAmount + Number(shippingCost);
@@ -26,7 +26,7 @@ const Checkout = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const userShippingAddress = {
+    let userShippingAddress = {
       name: enterName,
       email: enterEmail,
       phone: enterNumber,
@@ -37,6 +37,7 @@ const Checkout = () => {
     shippingInfo.push(userShippingAddress);
     console.log(shippingInfo);
   };
+
   return (
     <div>
       <Helmet>
@@ -55,6 +56,7 @@ const Checkout = () => {
                     type="text"
                     placeholder="Enter your name"
                     required
+                    value={enterName}
                     onChange={(e) => setEnterName(e.target.value)}
                   />
                 </div>
@@ -64,6 +66,7 @@ const Checkout = () => {
                     type="email"
                     placeholder="Enter your email"
                     required
+                    value={enterEmail}
                     onChange={(e) => setEnterEmail(e.target.value)}
                   />
                 </div>
@@ -73,6 +76,7 @@ const Checkout = () => {
                     type="number"
                     placeholder="Phone number"
                     required
+                    value={enterNumber}
                     onChange={(e) => setEnterNumber(e.target.value)}
                   />
                 </div>
@@ -82,6 +86,7 @@ const Checkout = () => {
                     type="text"
                     placeholder="Country"
                     required
+                    value={enterCountry}
                     onChange={(e) => setEnterCountry(e.target.value)}
                   />
                 </div>
@@ -91,6 +96,7 @@ const Checkout = () => {
                     type="text"
                     placeholder="City"
                     required
+                    value={enterCity}
                     onChange={(e) => setEnterCity(e.target.value)}
                   />
                 </div>
@@ -100,6 +106,7 @@ const Checkout = () => {
                     type="number"
                     placeholder="Postal code"
                     required
+                    value={postalCode}
                     onChange={(e) => setPostalCode(e.target.value)}
                   />
                 </div>
