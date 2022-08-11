@@ -17,7 +17,7 @@ const Carts = () => {
   };
 
   return (
-    <div className="cart__container" onClick={toggleCart}>
+    <div className="cart__container">
       <ListGroup className="cart">
         <div className="cart__close">
           <span onClick={toggleCart}>
