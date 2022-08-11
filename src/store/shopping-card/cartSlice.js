@@ -10,7 +10,7 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    // add to cart
+    // =================================== add to cart =================================== //
     addItem: (state, action) => {
       const newItem = action.payload;
       const existingItem = state.cartItems.find(
@@ -38,7 +38,7 @@ const cartSlice = createSlice({
       );
     },
 
-    // decrease Item
+    // =================================== decrease Item =================================== //
     decreaseItem: (state, action) => {
       const id = action.payload;
       const existingItem = state.cartItems.find((item) => item.id === id);
@@ -57,8 +57,7 @@ const cartSlice = createSlice({
       );
     },
 
-
-    // Delete item from cart
+    // =================================== Delete item from cart =================================== //
     deleteItem: (state, action) => {
       const id = action.payload;
       const existingItem = state.cartItems.find((item) => item.id === id);
