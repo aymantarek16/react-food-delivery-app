@@ -46,7 +46,6 @@ const featureData = [
 ];
 
 const Home = () => {
-  
   const [category, setCategory] = useState("All");
   const [allProducts, setAllProducts] = useState(products);
 
@@ -256,9 +255,13 @@ const Home = () => {
 
       <section>
         <Container>
-          <Row className="why__tasty-treat"> 
+          <Row className="why__tasty-treat">
             <Col lg="6" md="6">
-              <img src={whyImg} alt="why-tasty-treat" className="w-100 treat_img" />
+              <img
+                src={whyImg}
+                alt="why-tasty-treat"
+                className="w-100 treat_img"
+              />
             </Col>
 
             <Col lg="6" md="6">
