@@ -25,6 +25,6 @@ Full Responseve Design
 2. Redux Toolkit
 3. ReactStrap
 4. CSS
-
  
-![preview](https://i.imgur.com/25KO0Ft.jpeg)
+
+![preview] (https://i.imgur.com/FJvfOCa.jpeg)
