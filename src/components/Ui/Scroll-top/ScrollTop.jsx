@@ -14,7 +14,7 @@ const ScrollTop = () => {
   }, []);
   return (
     <div
-      className={!scroll ? "hidescroll" : "hidescroll"}
+      className={!scroll ? "scroll-up" : "hidescroll"}
       onClick={() => window.scrollTo(0, 0)}
     >
       <i className="ri-arrow-up-s-line"></i>
