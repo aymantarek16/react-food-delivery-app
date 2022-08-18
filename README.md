@@ -27,4 +27,4 @@ Full Responseve Design
 4. CSS
  
 
-![preview](https://i.imgur.com/FJvfOCa.jpeg)
+![preview](https://i.imgur.com/tufg3Ct.jpeg)
