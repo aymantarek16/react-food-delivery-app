@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import heroImg from "../assets/images/hero.png";
 import Category from "../components/Ui/category/Category";
@@ -46,6 +48,9 @@ const featureData = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const [category, setCategory] = useState("All");
   const [allProducts, setAllProducts] = useState(products);
 
@@ -90,7 +95,7 @@ const Home = () => {
   }, [category]);
 
   return (
-    <div>
+    <div className="home">
       <Helmet>
         <title>Food Delivery | Home</title>
       </Helmet>
@@ -101,16 +106,37 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
-                <h5 className="mb-3">Easy Way to make an order</h5>
-                <h1 className="mb-4 hero__title">
+                <h5
+                  className="mb-3"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                >
+                  Easy Way to make an order
+                </h5>
+                <h1
+                  className="mb-4 hero__title"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                >
                   <span>HUNGRY? </span>Just wait food at <span>your door</span>
                 </h1>
-                <p>
+                <p
+                  data-aos="fade-in"
+                  data-aos-delay="600"
+                  data-aos-duration="1200"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit
                   Debitis aut impedit dolore recusandae assumenda mollitia.
                 </p>
 
-                <div className="hero__btns d-flex align-items-center gap-5 mt-4">
+                <div
+                  className="hero__btns d-flex align-items-center gap-5 mt-4"
+                  data-aos="fade-up"
+                  data-aos-delay="1400"
+                  data-aos-duration="1000"
+                >
                   <button className="order__btn d-flex align-items-center justify-content-between">
                     Order now <i className="ri-arrow-right-s-line"></i>
                   </button>
@@ -120,7 +146,12 @@ const Home = () => {
                   </button>
                 </div>
 
-                <div className="hero__service d-flex align-items-center gap-5 mt-5">
+                <div
+                  className="hero__service d-flex align-items-center gap-5 mt-5"
+                  data-aos="fade-up"
+                  data-aos-delay="1400"
+                  data-aos-duration="1000"
+                >
                   <p className="d-flex align-items-center gap-2">
                     <span className="shipping__icon">
                       <i className="ri-car-line"></i>
@@ -138,7 +169,13 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col
+              lg="6"
+              md="6"
+              data-aos="fade-left"
+              data-aos-delay="2200"
+              data-aos-duration="1000"
+            >
               <div className="hero__img">
                 <img src={heroImg} alt="hero-img" className="w-100" />
               </div>
@@ -148,13 +185,23 @@ const Home = () => {
       </section>
 
       {/*  ===================== Section 2 ===================== */}
-      <section className="pt-0">
+      <section
+        className="pt-0"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="600"
+      >
         <Category />
       </section>
 
       {/*  ===================== Section 3 ===================== */}
 
-      <section className="feature">
+      <section
+        className="feature"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="600"
+      >
         <Container>
           <Row>
             <Col lg="12" className="text-center">
@@ -199,10 +246,22 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h2>Popular Foods</h2>
+              <h2
+                className="feature"
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="500"
+              >
+                Popular Foods
+              </h2>
             </Col>
 
-            <Col lg="12">
+            <Col
+              lg="12"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="500"
+            >
               <div className="food__category d-flex align-items-center justify-content-center gap-4">
                 <button
                   className={`all__btn ${
@@ -243,7 +302,15 @@ const Home = () => {
             </Col>
 
             {allProducts.map((item) => (
-              <Col lg="3" md="4" key={item.id} className="mt-5">
+              <Col
+                lg="3"
+                md="4"
+                key={item.id}
+                className="mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                data-aos-duration="800"
+              >
                 <ProductCard item={item} />
               </Col>
             ))}
