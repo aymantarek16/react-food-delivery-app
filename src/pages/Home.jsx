@@ -200,7 +200,7 @@ const Home = () => {
         className="feature"
         data-aos="fade-up"
         data-aos-delay="500"
-        data-aos-duration="600"
+        data-aos-duration="500"
       >
         <Container>
           <Row>
@@ -249,8 +249,8 @@ const Home = () => {
               <h2
                 className="feature"
                 data-aos="fade-left"
-                data-aos-delay="500"
-                data-aos-duration="500"
+                data-aos-delay="400"
+                data-aos-duration="400"
               >
                 Popular Foods
               </h2>
@@ -259,8 +259,8 @@ const Home = () => {
             <Col
               lg="12"
               data-aos="fade-right"
-              data-aos-delay="500"
-              data-aos-duration="500"
+              data-aos-delay="400"
+              data-aos-duration="400"
             >
               <div className="food__category d-flex align-items-center justify-content-center gap-4">
                 <button
@@ -309,7 +309,7 @@ const Home = () => {
                 className="mt-5"
                 data-aos="zoom-in"
                 data-aos-delay="300"
-                data-aos-duration="800"
+                data-aos-duration="300"
               >
                 <ProductCard item={item} />
               </Col>
@@ -320,7 +320,7 @@ const Home = () => {
 
       {/*  ===================== Section 5 ===================== */}
 
-      <section>
+      <section data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
         <Container>
           <Row className="why__tasty-treat">
             <Col lg="6" md="6">
@@ -389,11 +389,24 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5">
-              <h2>Hot Pizza</h2>
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="600"
+              >
+                Hot Pizza
+              </h2>
             </Col>
 
             {hotPizza.map((item) => (
-              <Col lg="3" md="4" key={item.id}>
+              <Col
+                lg="3"
+                md="4"
+                key={item.id}
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-duration="600"
+              >
                 <ProductCard item={item} />
               </Col>
             ))}
@@ -407,7 +420,12 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <div className="testimonial">
+              <div
+                className="testimonial"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="800"
+              >
                 <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
                 <h2 className="testimonial__title  mb-4">
                   What our <span>customers</span>are saying
@@ -422,7 +440,13 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col
+              lg="6"
+              md="6"
+              data-aos="fade-left"
+              data-aos-delay="700"
+              data-aos-duration="800"
+            >
               <img src={networkImg} alt="testimonial-img" className="w-100" />
             </Col>
           </Row>
